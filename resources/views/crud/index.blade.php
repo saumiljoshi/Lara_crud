@@ -22,7 +22,7 @@
      @csrf
      <div class="card">
         <div class="card-header">
-            Customer Add
+             <center>Customer Add</center>
         </div>
         <div class="card-body">
             <div class="form-group">
@@ -48,7 +48,7 @@
 </div>
   <div class="row">
     <div class="col-sm-12">
-    <h1>Customer List</h1>
+    <h1><center>Customer List</center></h1>
     <table class="table table-hovered table-stripped">
             <thead style>
             <tr>
