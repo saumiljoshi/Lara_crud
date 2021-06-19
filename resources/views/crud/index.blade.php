@@ -61,7 +61,7 @@
             </thead>
             <tbody >
                 @foreach($customer as $data)
-                    <tr style="color: rgb(173, 32, 68);">
+                    <tr>
                         <td>{{ $data->id }}</td>
                         <td>{{ $data->name }}</td>
                         <td>{{ $data->email }}</td>
