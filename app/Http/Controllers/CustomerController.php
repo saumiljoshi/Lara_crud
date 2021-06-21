@@ -65,7 +65,7 @@ class CustomerController extends Controller
      */
     public function show(customer $customer)
     {
-        //
+        
     }
 
     /**
