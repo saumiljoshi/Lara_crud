@@ -14,8 +14,8 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        $customer = customer::all();
-        return view('crud.index')->with('customer',$customer);
+        $customer = customer::paginate(5);
+        return view('index',['customer'=> $customer]);
     }
 
     /**
@@ -65,7 +65,7 @@ class CustomerController extends Controller
      */
     public function show(customer $customer)
     {
-        
+       
     }
 
     /**
