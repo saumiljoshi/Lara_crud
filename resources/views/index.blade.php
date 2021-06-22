@@ -48,7 +48,7 @@
 </div>
   <div class="row">
     <div class="col-sm-12">
-    <h1><center>Customer List</center></h1>
+    <h1><center>Customer List {{ $customers }}</center></h1>
     <table class="table table-hovered table-stripped">
             <thead style>
             <tr>
@@ -60,7 +60,7 @@
             </tr>
             </thead>
             <tbody >
-                @foreach($customer as $data)
+                @foreach($customers as $data)
                     <tr>
                         <td>{{ $data->id }}</td>
                         <td>{{ $data->name }}</td>
@@ -78,13 +78,10 @@
                         </tr>
                         @endforeach
             </tbody>
-            <div class="w-5">
-            {{$customer->links()}}
+            <div>
+            {{-- {{$customers->links('index') }} --}}
             </div>
             <style>
-                .w-5{
-                    display:none
-                }
             </style>
     </div>
   </div>
