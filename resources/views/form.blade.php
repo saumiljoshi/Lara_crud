@@ -7,15 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-<form method="GET" enctype="multipart/form-data" action="" >
+<form method="GET" action="/add">
  @csrf
-  name<input type="text" name="name" /><br/><br/>
-  category<input type="text" name="catgory" /><br><br/>
-  Brand<input type="text" name="brand"/><br><br/>
-  Price<input type="number" name="price"/><br><br/>
-  display_price<input type="number" name="display_price"/><br><br/>
-  Description<input type="text" name="description"/><br><br/>
-     <input type="submit" name="submit" value="submit" />
+  Name:<input type="text" name="name"/><br/><br/>
+  Email:<input type="text" name="email"/><br><br/>
+  Age:<input type="text" name="age"/><br><br/>
+  Password:<input type="password" name="password"/><br><br/>
+  <input type="submit" name="submit" value="submit"/>
 </form>    
 </body>
 </html>
